@@ -91,7 +91,7 @@ header h1 {
   margin-right: 20px;
 }
 
-.ingredients .h3 {
+.ingredients .h3, .instructions .h3 {
   font-size: 1.8em;
   font-family: 'young-serif';
   color: #7e4835;
@@ -107,11 +107,37 @@ header h1 {
 .ingredient-list li {
   list-style: none;
   position: relative;
+  color: #444444;
 }
 
 .ingredient-list li::before {
   content: '\2022';
   color: #7e4835;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 1.8em;
+}
+
+.instructions ol {
+  padding-left: 12px !important;
+  line-height: 1.6;
+  font-family: 'outfit';
+}
+
+.instructions ol li {
+  list-style: none;
+  display: flex !important;
+  align-items: flex-start;
+  counter-increment: my-li;
+  gap: 12px;
+  margin-bottom: 0.5em;
+  color: #444444;
+}
+
+.instructions ol li::before {
+  content: counter(my-li) ".";
+  color: #7e4835;
+  text-align: left;
+  min-width: 1.5em;
+  font-weight: bold;
+  flex-shrink: 0;
 }
