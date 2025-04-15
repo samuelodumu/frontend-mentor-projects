@@ -185,7 +185,10 @@ hr {
     font-size: 2.5em;
   }
 
-  .preparation .header,
+  .preparation .header {
+    font-size: 1.2em;
+  }
+
   .ingredients .header,
   .instructions .header,
   .nutrition .header {
@@ -209,11 +212,14 @@ hr {
     font-size: 2em;
   }
 
-  .preparation .header,
+  .preparation .header {
+    font-size: 1.2em;
+  }
+
   .ingredients .header,
   .instructions .header,
   .nutrition .header {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   header h1,
