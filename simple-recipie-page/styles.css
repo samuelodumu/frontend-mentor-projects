@@ -21,6 +21,14 @@ body {
   background-color: #f2e5d8;
 }
 
+.container {
+  background-color: #fefdfd;
+  border-radius: 25px;
+  max-width: 60%;
+  margin: 5em auto;
+  padding: 36px;
+}
+
 h1,
 h2,
 h3,
@@ -31,24 +39,16 @@ h6 {
   font-weight: 400;
 }
 
+header h1 {
+  font-size: 3em;
+}
+
 p {
   font-family: 'outfit';
   font-weight: 400;
   line-height: 1.5;
   color: #5a5a5a;
   margin-top: 0;
-}
-
-.container {
-  background-color: #fefdfd;
-  border-radius: 25px;
-  max-width: 60%;
-  margin: 5em auto;
-  padding: 36px;
-}
-
-header h1 {
-  font-size: 3em;
 }
 
 .img-fluid {
@@ -173,4 +173,53 @@ hr {
   font-weight: bold;
 }
 
+/* media queries */
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .preparation .header,
+  .ingredients .header,
+  .instructions .header,
+  .nutrition .header {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    min-width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-fluid {
+    border-radius: 0;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .preparation .header,
+  .ingredients .header,
+  .instructions .header,
+  .nutrition .header {
+    font-size: 1.2em;
+  }
+
+  header h1, p {
+    padding: 0 15px;
+  }
+  
+  .preparation, .ingredients, .instructions, .nutrition {
+    padding: 15px !important;
+  }
+}
