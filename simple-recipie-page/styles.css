@@ -35,7 +35,7 @@ p {
   font-family: 'outfit';
   font-weight: 400;
   line-height: 1.5;
-  color: #444444;
+  color: #5a5a5a;
   margin-top: 0;
 }
 
@@ -64,7 +64,7 @@ header h1 {
   margin: 20px 0;
 }
 
-.preparation .h3 {
+.preparation .header {
   font-size: 1.5em;
   font-weight: 600;
   font-family: 'outfit';
@@ -81,7 +81,7 @@ header h1 {
 .preparation-list li {
   list-style: none;
   position: relative;
-  color: #444444;
+  color: #5a5a5a;
 }
 
 .preparation-list li::before {
@@ -91,11 +91,13 @@ header h1 {
   margin-right: 20px;
 }
 
-.ingredients .h3, .instructions .h3 {
+.ingredients .header,
+.instructions .header,
+.nutrition .header {
   font-size: 1.8em;
   font-family: 'young-serif';
   color: #7e4835;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .ingredient-list {
@@ -107,7 +109,7 @@ header h1 {
 .ingredient-list li {
   list-style: none;
   position: relative;
-  color: #444444;
+  color: #5a5a5a;
 }
 
 .ingredient-list li::before {
@@ -115,6 +117,10 @@ header h1 {
   color: #7e4835;
   font-weight: bold;
   margin-right: 1.8em;
+}
+
+hr {
+  margin: 2em 0;
 }
 
 .instructions ol {
@@ -130,14 +136,41 @@ header h1 {
   counter-increment: my-li;
   gap: 12px;
   margin-bottom: 0.5em;
-  color: #444444;
+  color: #5a5a5a;
 }
 
 .instructions ol li::before {
-  content: counter(my-li) ".";
+  content: counter(my-li) '.';
   color: #7e4835;
   text-align: left;
   min-width: 1.5em;
   font-weight: bold;
   flex-shrink: 0;
 }
+
+.nutrition table {
+  min-width: 100%;
+  font-family: 'outfit';
+  margin-bottom: 2em;
+  border-collapse: collapse;
+}
+
+.nutrition table tr:nth-child(-n + 3) {
+  border-bottom: 1px solid #a6a6a6 !important;
+}
+
+.nutrition table tr td {
+  padding-left: 2em !important;
+  padding: 18px 0;
+}
+
+.nutrition .label {
+  color: #5a5a5a;
+}
+
+.nutrition .value {
+  color: #7e4835;
+  font-weight: bold;
+}
+
+
