@@ -73,20 +73,17 @@ p {
 }
 
 .preparation-list {
-.preparation-list {
   padding-left: 10px !important;
   line-height: 2;
   font-family: 'outfit';
 }
 
 .preparation-list li {
-.preparation-list li {
   list-style: none;
   position: relative;
   color: #5a5a5a;
 }
 
-.preparation-list li::before {
 .preparation-list li::before {
   content: '\2022';
   color: purple;
