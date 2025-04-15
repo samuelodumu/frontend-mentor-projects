@@ -192,6 +192,7 @@ hr {
     font-size: 1.5em;
   }
 }
+
 @media (max-width: 480px) {
   .container {
     min-width: 100%;
@@ -215,11 +216,27 @@ hr {
     font-size: 1.2em;
   }
 
-  header h1, p {
+  header h1,
+  p {
     padding: 0 15px;
   }
-  
-  .preparation, .ingredients, .instructions, .nutrition {
+
+  .preparation,
+  .ingredients,
+  .instructions,
+  .nutrition {
     padding: 15px !important;
+  }
+
+  .ingredient-list {
+    padding-left: 20px !important;
+  }
+
+  .instructions ol {
+    padding-left: 20px !important;
+  }
+
+  .instructions ol li {
+    gap: 8px;
   }
 }
